@@ -1,5 +1,3 @@
-
-
 def print_menu():
     print('Menu')
     print('-------------')
@@ -20,7 +18,6 @@ def encode(password):
             num = int(num) + 3
         new_password.append(str(num))
     new_password = ''.join(new_password)
-    print('Your password has been encoded and stored!')
     return new_password
 
 
