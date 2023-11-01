@@ -1,4 +1,5 @@
 
+
 def print_menu():
     print('Menu')
     print('-------------')
@@ -23,11 +24,14 @@ def encode(password):
     return new_password
 
 
+option = '0'
 while option != '3':
     option = print_menu()
     if option == '1':
         password = input('Please enter your password to encode: ')
-        encode(password)
+        encoded_password = encode(password)
+        print('Your password has been encoded and stored!')
     elif option == '2':
-        password = input('Please enter your password to decode: ')
-        decode(password)
+        decoded_password = decode(encoded_password)
+        print(f'The encoded password is {encoded_password}, and the original password is {decoded_password}.')
+
